@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fixedBashlig{
+    background-color: rgb(0, 0, 0,0.6);
+    height: 65px;
+    width: 100%;
+    margin-top: 0;
+    position: fixed;
+    z-index: 1;
+}
+html{
+    font-size: 10px;
+}
+.moreButton> i{
+    display: none;
+    position: fixed;
+    right: 20%;
+    top: 3%;
+    background-color: transparent;
+    font-size: 3rem;
+    text-align: center;
+    color: gray;
+    align-items: right;
+    z-index: 1;
+}
+.fixedBashlig>#strbts{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 150px;
+    font-size:1.8rem ;
+    font-family: 'Catamaran', sans-serif;
+}
+.fixedBashlig>#sign{
+    text-decoration: none;
+    color: rgb(192, 183, 183);
+    position: absolute;
+    top: 25px;
+    right: 250px;
+    font-size:1.4rem ;
+    font-family: 'Catamaran', sans-serif;
+}
+.fixedBashlig>#login{
+    text-decoration: none;
+    color: rgb(192, 183, 183);
+    position: absolute;
+    top: 25px;
+    right: 180px;
+    font-size:1.4rem ;
+    font-family: 'Catamaran', sans-serif;
+}
+.fixedBashlig>#sign:hover{
+    color: white;
+}
+.fixedBashlig>#login:hover{
+    color: white;
+}
+header {
+    background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+    height: 680px;
+}
+.heading h1{
+    color: white;
+    font-size: 8.7rem;
+    font-weight:700;
+    text-align: center;
+    position: relative;
+    top: 210px;
+}
+.heading h2{
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    position: relative;
+    margin-top: 210px;
+    font-weight: 500;
+}
+.heading>.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+.heading>.button a{
+    color: white;
+    background-color: #ee0979;
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    margin-top: 210px;
+    padding: 20px;
+    width: 170px;
+}
+.container{
+    width: 100%;
+}
+img{
+    border-radius: 50%; max-width: 40%; height: auto;
+}
+.textPart{
+    font-family: 'Catamaran', sans-serif;
+}
+.container>.firstPart>.imagePart{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    position: relative;
+    margin-top: 40px;
+}
+.container>.firstPart>.textPart{
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   position: relative;
+   margin-top: -350px;
+   width: 50%;
+}
+.container>.firstPart>.textPart h2{
+    font-size: 6rem ;
+    font-weight: 100;
+    width: 75%;
+}
+.container>.firstPart>.textPart p{
+    font-size: 1.7rem ;
+    font-weight: 300;
+    width: 75%;
+}
+
+.container>.secondPart>.imagePart{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: relative;
+    margin-top: 200px;
+  
+}
+.container>.secondPart>.textPart{
+    display: flex;
+    flex-direction: column;
+   align-items:flex-end;
+   width: 50%;
+   position: relative;
+   margin-left: 400px;
+   margin-top: -30%;
+}
+.container>.secondPart>.textPart h2{
+    font-size: 6rem ;
+    font-weight: 100;
+    width: 75%;
+}
+.container>.secondPart>.textPart p{
+    font-size: 1.7rem ;
+    font-weight: 300;
+    width: 75%;
+}
+.container>.thirdPart{
+    position: relative;
+    margin-top: 30%;
+}
+.container>.thirdPart>.imagePart{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-content:center;    
+}
+.container>.thirdPart{
+    margin-bottom: 20%;
+}
+.container>.thirdPart>.textPart{
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   position: relative;
+   width: 50%;
+   margin-top: -30%;
+}
+.container>.thirdPart>.textPart h2{
+    font-size: 6rem ;
+    font-weight: 100;
+    width: 75%;
+}
+.container>.thirdPart>.textPart p{
+    font-size: 1.7rem ;
+    font-weight: 300;
+    width: 75%;
+}
+
+.footerPart{
+    background-color: black;
+    height: 120px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footerPart>.footerText{
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    padding-top: 50px;
+
+}
+
+@media screen and (max-width:1000px) {
+    
+    .moreButton> i{
+        display: inline-block;
+    }
+
+    .fixedBashlig #sign, .fixedBashlig #login{
+        display: none;
+    }
+
+    img{
+        border-radius: 50%; 
+         height: 500px;
+         max-width: 500px;
+    }
+    .container>.firstPart>.imagePart{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        position: relative;
+        margin-top: 40px;
+    }
+    .container>.firstPart>.textPart{
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+       position: relative;
+       margin-top: 10%;
+       margin-left: 10%;
+       width: 100%;
+    } 
+    .container>.firstPart>.textPart h2{
+        font-size: 5rem ;
+        font-weight: 100;
+    }
+    .container>.firstPart>.textPart p{
+        font-size: 1.5rem ;
+        font-weight: 300;
+    }   
+    .container>.secondPart>.imagePart{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        position: relative;
+        margin-top:10%;
+      
+    }
+    .container>.secondPart>.textPart{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-content: center;
+       width: 100%;
+       position: relative;
+       margin-top: 10%;
+       margin-left: -10%;
+
+    }
+    .container>.secondPart>.textPart h2{
+        font-size: 5rem ;
+        font-weight: 100;
+        width: 75%;
+    }
+    .container>.secondPart>.textPart p{
+        font-size: 1.5rem ;
+        font-weight: 300;
+        width: 75%;
+    }
+    .container>.thirdPart>.imagePart{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        position: relative;
+        margin-top: -10%;
+    }
+    .container>.thirdPart>.textPart{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-content: center;
+       position: relative;
+       width: 100%;
+       margin-top: 100px;
+       margin-left: 10%;
+    }
+    .container>.thirdPart>.textPart h2{
+        font-size: 5rem ;
+        font-weight: 100;
+        width: 75%;
+    }
+    .container>.thirdPart>.textPart p{
+        font-size: 1.5rem ;
+        font-weight: 300;
+        width: 75%;
+    }
+}
+@media screen and (max-width:600px) {
+    img{
+        border-radius: 50%; max-width: 50%; height: auto;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    .heading h1{
+        color: white;
+        font-size: 6rem;
+        font-weight:700;
+        text-align: center;
+        position: relative;
+        top: 210px;
+    }
+    .heading h2{
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+        position: relative;
+        margin-top: 210px;
+        font-weight: 500;
+    }
+    header {
+        background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+        height: 620px;
+    }
+    .fixedBashlig>#strbts{
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        top: 25px;
+        left: 90px;
+        font-size:1.8rem ;
+        font-family: 'Catamaran', sans-serif;
+    }
+}
